@@ -1,0 +1,25 @@
+package com.imooc.passbook.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+/**
+ * <h1>库存请求响应</h1>
+ * @author BobJiang
+ * @version 1.0
+ * @date 2020/2/25 11:59
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class InventoryResponse {
+
+    /** 用户 id */
+    private Long userId;
+
+    /** 优惠券模版信息 */
+    private List<PassTemplateInfo> passTemplateInfos;
+}
